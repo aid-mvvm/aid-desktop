@@ -1,0 +1,46 @@
+# Language Configuration
+language: english
+
+# Code Preferences
+code:
+  primary_language: typescript
+  secondary_language: javascript
+
+# Formatting Rules
+formatting:
+  indent_style: space
+  indent_size: 4
+  end_of_line: lf
+  insert_final_newline: true
+  trim_trailing_whitespace: true
+  max_line_length: off
+
+# TypeScript Specific
+typescript:
+  member-delimiter-style: semi
+  object-literal-delimiter: semi
+  interface-over-type-literal: true
+  # Strict mode settings
+  strict_mode:
+    noImplicitAny: true
+    strictNullChecks: true
+    strictFunctionTypes: true
+    strictBindCallApply: true
+    noImplicitThis: true
+    useUnknownInCatchVariables: true
+    alwaysStrict: true
+
+# Exclusions
+exclude:
+  patterns:
+    - node_modules/
+    - .git/
+    - dist/
+    - build/
+    - "*.log"
+    - "*.lock"
+    - coverage/
+    - .env*
+    - .DS_Store
+    - "*.min.js"
+    - "*.min.css"
